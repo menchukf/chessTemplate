@@ -1,3 +1,4 @@
+package workspace.resources;
 
 import javax.swing.*;
 //very simple runner for our program. Don't mess with it.

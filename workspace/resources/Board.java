@@ -1,3 +1,4 @@
+package workspace.resources;
 
 
 import java.awt.Color;

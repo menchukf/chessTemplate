@@ -1,3 +1,4 @@
+package workspace.resources;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -42,6 +43,7 @@ public class StartMenu implements Runnable {
         components.add(blackPanel, BorderLayout.EAST);
         final JLabel blackPiece = new JLabel();
         try {
+            System.out.println(getClass().toString());
             Image blackImg = ImageIO.read(getClass().getResource("bp.png"));
             blackPiece.setIcon(new ImageIcon(blackImg));
             blackPanel.add(blackPiece);
