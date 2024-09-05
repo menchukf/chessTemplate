@@ -4,6 +4,8 @@ import java.awt.Component;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import javax.imageio.ImageIO;
 import javax.swing.Box;
@@ -44,6 +46,7 @@ public class StartMenu implements Runnable {
             blackPiece.setIcon(new ImageIcon(blackImg));
             blackPanel.add(blackPiece);
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             System.out.println("Required game file bp.png missing");
         }
         

@@ -25,15 +25,13 @@ public class GameWindow {
     
     public GameWindow(String blackName, String whiteName, int hh, 
             int mm, int ss) {
-        
         blackClock = new Clock(hh, ss, mm);
         whiteClock = new Clock(hh, ss, mm);
-        
         gameWindow = new JFrame("Chess");
-        
-
         try {
-            Image whiteImg = ImageIO.read(getClass().getResource("wp.png"));
+            String filepath = "./workspaces/chessTemplate/workspace/wp.png";
+            Image whiteImg = ImageIO.read(new File(filepath));
+            //Image whiteImg = ImageIO.read(getClass().getResource("wp.png"));
             gameWindow.setIconImage(whiteImg);
         } catch (Exception e) {
             System.out.println("Game file wp.png not found");
